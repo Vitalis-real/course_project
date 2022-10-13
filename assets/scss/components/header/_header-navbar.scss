@@ -4,27 +4,24 @@
 .header-navbar {
   display: grid;
   justify-items: end;
-  
 
-  &__btn{
-    display: none
+  &__btn {
+    display: none;
   }
-  
-  &__list{
+
+  &__list {
     @include unlist(0 (-$gap-sm) 0 0);
-  display: grid;
-  gap: $gap;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
-  justify-content: end;
+    display: grid;
+    gap: $gap;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
+    justify-content: end;
   }
-&__item{
 
-}
- &__link{
-  display: block;
-  padding: $gap-sm;
-  font-size: 1.125rem;
-  letter-spacing: 0.1em;
- }
+  &__link {
+    display: block;
+    padding: $gap-sm;
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
+  }
 }
