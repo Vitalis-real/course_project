@@ -77,6 +77,7 @@
 
   &__list {
     @include md-min {
+      @include unlist(0 (-$gap-sm)0 0);
       display: grid;
       justify-content: end;
 
@@ -86,16 +87,13 @@
       grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
     }
     @include md {
-      position: absolute;
-      top: 100%;
-      right: $gap;
-
+      @include unlist;
       display: none;
-      display: block;
+      position: absolute;
+      right: $gap;
+      top: 100%;
 
       background-color: rgba($color-gray-dark, 0.9);
-
-      @include unlist;
       @include box-shadow;
     }
   }

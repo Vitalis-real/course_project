@@ -1,0 +1,40 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.form {
+  background-color: $color-primary;
+  height: 120px;
+  display: grid;
+  &__container {
+    display: grid;
+    align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+@extend %container;
+  }
+}
+
+.form-item {
+  display: block;
+width: 420px;
+background-color: $color-primary;
+}
+.form__input {
+  display: grid;
+background-color: #38405A;
+border-bottom-color: rgba(255, 255, 255, 0.25);
+border: 2px solid rgba(255, 255, 255, 0);
+height: 60px;
+  font-size: 18px;
+letter-spacing: 2px;
+line-height: 39px;
+color: $color-light;
+font-weight: 400;
+width: 100%;
+}
+
+
+.btn {
+  background-color: #424A63;
+  color: #ffffff;
+}
