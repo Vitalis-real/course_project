@@ -1,0 +1,84 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.posts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.posts-item {
+background-color: #eeeeee;
+}
+
+.posts-item:nth-of-type(1) {
+  grid-area: p1;
+}
+
+.posts-item:nth-of-type(2) {
+  grid-area: p2;
+}
+
+.posts-item:nth-of-type(3) {
+  grid-area: p3;
+}
+
+.posts-item:nth-of-type(4) {
+  grid-area: p4;
+}
+
+.posts-item:nth-of-type(5) {
+  grid-area: p5;
+}
+
+.posts-item:nth-of-type(6) {
+  grid-area: p6;
+}
+.posts-item__image {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #2d3651;
+  padding: 0;
+}
+
+.posts-item__image img {
+  width: 100%;
+  transition: transform 0.5s;
+  transition: transform 0.5s;
+  object-fit: cover;
+}
+
+.posts-item__caption {
+  display: grid;
+  align-content: center;
+  padding: 20px;
+  & p {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-gray;
+    font-weight: 400;
+    transition: color 0.5s;
+    text-align: center;
+  }
+}
+
+h3 {
+  letter-spacing: 0.05em;
+  color: #637588;
+  font-size: 1.125rem;
+}
+
+.posts-item__caption h3 {
+  transition: color 0.5s;
+  text-align: center;
+}
+
+.posts-item__link {
+  display: grid;
+  overflow: hidden;
+  height: 100%;
+  grid-template-rows: 300px 1fr;
+}
+
+
+
