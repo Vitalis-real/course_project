@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #637588;
+}
+
 html {
   overflow-y: scroll;
-
+overflow-x: hidden;
   font-family: $font-main;
   font-size: $font-size;
 }

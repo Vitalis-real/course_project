@@ -1,14 +1,18 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+.posts h2 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
 
 .posts {
+ 
   &__title {
-    width: 1300px;
-    height: 53px;
+    
     font-size: 40px;
     letter-spacing: 4px;
     line-height: 48px;
-    font-weight: 700;
+    
   }
 
 &__container{
@@ -16,9 +20,9 @@
 }
 
 &__grid{
-
   display: grid;
   gap: $gap;
+  padding-bottom: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
 }
