@@ -12,14 +12,15 @@ body {
 }
 
 html {
+  overflow-x: hidden;
   overflow-y: scroll;
-overflow-x: hidden;
+
   font-family: $font-main;
   font-size: $font-size;
 }
 
 h1 {
-  letter-spacing: 0.080em;
+  letter-spacing: 0.08em;
 
   font-family: $font-header;
   font-weight: 300;
@@ -37,8 +38,9 @@ h1 {
 }
 
 h2 {
-  font-family: $font-header;
   color: $color-primary;
+
+  font-family: $font-header;
 }
 
 a {

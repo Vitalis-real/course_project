@@ -8,6 +8,7 @@
 
   &__btn {
     position: relative;
+
     width: 30px;
     height: 22.5px;
     margin: $gap 0;
@@ -77,7 +78,6 @@
 
   &__list {
     @include md-min {
-      @include unlist(0 (-$gap-sm)0 0);
       display: grid;
       justify-content: end;
 
@@ -85,20 +85,21 @@
 
       gap: $gap;
       grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
+      @include unlist(0 (-$gap-sm) 0 0);
     }
     @include md {
-      @include unlist;
-      display: none;
       position: absolute;
-      right: $gap;
       top: 100%;
+      right: $gap;
+
+      display: none;
 
       background-color: rgba($color-gray-dark, 0.9);
+
+      @include unlist;
       @include box-shadow;
     }
   }
-
- 
 
   &__link {
     display: block;

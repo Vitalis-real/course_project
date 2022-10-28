@@ -2,72 +2,77 @@
 @use "../../mixins" as *;
 
 .footer {
-  background-color: #2d3651;
   padding: 50px 20px 70px;
+
   text-align: center;
-    &__container {
-      max-width: 1340px;
-      margin: auto;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
+
+  background-color: #2d3651;
+  &__container {
+    max-width: 1340px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
-.footer__site .fab{
+.footer__site .fab {
   font-size: 36px;
 }
 
-.footer__site{
+.footer__site {
   position: relative;
+
   display: grid;
- 
   justify-content: center;
+
   margin-bottom: 40px;
 
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-
- 
 }
 
 .footer__site a {
   display: block;
-  padding: 10px;
-  transition: color 0.5s;
 
+  padding: 10px;
+
+  transition: color 0.5s;
 }
 
 .fab {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
   transition: color 0.5s;
   &:hover {
-     color: $color-accent;
-     transition: transform 0.5s;
-        }
+    transition: transform 0.5s;
+
+    color: $color-accent;
+  }
 }
 
-.footer__copy span:nth-of-type(1){
+.footer__copy span:nth-of-type(1) {
   margin-right: -0.5em;
+
   letter-spacing: 0.33em;
+
   font-weight: 100;
 }
 
-.footer__copy span:nth-of-type(2){
+.footer__copy span:nth-of-type(2) {
   letter-spacing: 0.05em;
+
   color: #e5e5e5;
+
   font-weight: 700;
 }
 
 
-  .footer__site::after {
-    position: absolute;
-    bottom: -20px;
-    left: calc(50% - 37.5px);
-    width: 75px;
-    height: 2px;
-    content: "";
-    background-color: rgba(255, 255, 255, 0.1);
+.footer__site::after {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 37.5px);
+
+  width: 75px;
+  height: 2px;
+
+  content: "";
+
+  background-color: rgba(255, 255, 255, 0.1);
 }

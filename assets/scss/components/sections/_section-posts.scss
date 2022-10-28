@@ -2,30 +2,27 @@
 @use "../../mixins" as *;
 .posts h2 {
   margin-top: 0;
-  margin-bottom: 3rem;
 }
 
 .posts {
- 
   &__title {
-    
-    font-size: 40px;
     letter-spacing: 4px;
+
+    font-size: 40px;
     line-height: 48px;
-    
   }
 
-&__container{
-@extend %container;
-}
+  &__container {
+    @extend %container;
+  }
 
-&__grid{
-  display: grid;
-  gap: $gap;
-  padding-bottom: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
-}
+  &__grid {
+    display: grid;
 
-}
+    padding-bottom: 20px;
 
+    gap: $gap;
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
