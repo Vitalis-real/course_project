@@ -562,9 +562,6 @@ header {
 }
 
 .about {
-  padding-top: 100px;
-  padding-bottom: 100px;
-
   letter-spacing: 0.055em;
 
   background-color: #e5e5e5;
@@ -606,7 +603,7 @@ header {
   margin: 0;
 }
 
-.about__content--title {
+.about__title {
   margin: 0 0 48px;
 
   letter-spacing: 4px;
@@ -672,9 +669,56 @@ header {
 }
 .form-item__input:hover,
 .form-item__input:focus {
+  color: #ffffff;
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
+  outline: none;
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form-item__input::-webkit-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::-moz-placeholder {
+  color: #637588;
+}
+
+.form-item__input:-ms-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::-ms-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::placeholder {
+  color: #637588;
+}
+
+.form-item__input:focus::-webkit-input-placeholder,
+.form-item__input:hover::-webkit-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:focus::-moz-placeholder,
+.form-item__input:hover::-moz-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:focus:-ms-input-placeholder,
+.form-item__input:hover:-ms-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:focus::-ms-input-placeholder,
+.form-item__input:hover::-ms-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:focus::placeholder,
+.form-item__input:hover::placeholder {
+  color: #8c9bab;
 }
 
 .form-item .btn--primary {
@@ -1022,8 +1066,7 @@ header {
   .about__content p:first-of-type::after {
     right: -50px;
   }
-  .posts,
-  .about {
+  .posts {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -1057,7 +1100,7 @@ header {
     gap: 40px;
     grid-template-columns: 1fr 271px;
   }
-  .about__content--title {
+  .about__title {
     margin-bottom: 2.625rem;
 
     letter-spacing: 0.1em;
@@ -1125,7 +1168,7 @@ header {
   .about__content p:first-of-type::after {
     right: -10px;
   }
-  .about__content--title {
+  .about__title {
     margin-bottom: 2.25rem;
 
     font-size: 1.5rem;
@@ -1236,7 +1279,7 @@ header {
     gap: 20px;
     grid-template-columns: 1fr;
   }
-  .about__content--title {
+  .about__title {
     margin-bottom: 2.25rem;
 
     text-align: center;
