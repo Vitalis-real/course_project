@@ -30,6 +30,9 @@
   background-color: rgba(255, 255, 255, 0.05);
 
   font-size: 1.125rem;
+  &::placeholder {
+    color: #637588;
+  }
   &:hover,
   &:focus {
     border-color: rgba(255, 255, 255, 0.15);
@@ -38,13 +41,10 @@
     outline: none;
     color: #ffffff;
   }
-}
-.form-item__input::placeholder {
-  color: #637588;
-}
-.form-item__input:focus::placeholder,
-.form-item__input:hover::placeholder {
+  &:hover::placeholder,
+  &:focus::placeholder {
     color: #8c9bab;
+  }
 }
 
 .form-item .btn--primary {
